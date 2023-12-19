@@ -1,6 +1,7 @@
 const express = require("express");
 
 const app = express();
+const morgan = require("morgan");
 
 let phonebook = [
   {
@@ -64,6 +65,12 @@ app.delete("/api/persons/:id", (request, response) => {
 });
 
 app.use(express.json());
+morgan.token("content", (req, res) => JSON.stringify(req.body));
+app.use(
+  morgan(
+    ":method :url :status :res[content-length] - :response-time ms :content"
+  )
+);
 
 app.post("/api/persons", (request, response) => {
   const { body } = request;
