@@ -1,0 +1,25 @@
+{
+  "name": "part3-backend",
+  "version": "1.0.0",
+  "description": "fullstack open exercises part 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/norristown/part3-backend.git"
+  },
+  "author": "Kevin Jarvis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/norristown/part3-backend/issues"
+  },
+  "homepage": "https://github.com/norristown/part3-backend#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
