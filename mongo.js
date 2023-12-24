@@ -5,7 +5,6 @@ if (process.argv.length < 3) {
   process.exit(1);
 }
 
-// Cqad1LU2IZNZ5rog
 const password = process.argv[2];
 const name = process.argv[3];
 const number = process.argv[4];
