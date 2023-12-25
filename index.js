@@ -53,7 +53,7 @@ app.get("/info", (request, response) => {
   );
 });
 
-const { PORT } = process.env;
+const { PORT } = process.env || 3002;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
